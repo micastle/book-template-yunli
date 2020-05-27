@@ -1,7 +1,7 @@
 {
-    "title": "文档样例",
+    "title": "文档模板",
     "author": "陈亮",
-    "description": "文档样例",
+    "description": "文档模板",
     "language": "zh-hans",
     "gitbook": "3.2.3",
     "links" : {
@@ -70,7 +70,7 @@
         },
         "insert-title": {
             "url": "",
-            "title": "文档样例",
+            "title": "文档模板",
             "style": "background: none; max-height: 20px; min-height: 20px"
         },
         "insert-footer": {
