@@ -12,7 +12,7 @@
 # production
 /build
 /_book
-SUMMARY.md
+# SUMMARY.md
 
 # misc
 .DS_Store
