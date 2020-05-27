@@ -4,6 +4,14 @@
     position: absolute;
 }
 
+/* #344559 */
+.book-summary {
+    background-color: #344559 !important;
+}
+.book-header {
+    background-color: black !important;
+}
+
 .book-logo {
     text-align: left !important;
     vertical-align:middle;
@@ -46,10 +54,6 @@
     font-size: 12px;
     color: #808080;
     padding:0px 0px 0px 10px;
-}
-
-.book-header {
-    background-color: black !important;
 }
 
 .page-inner {
