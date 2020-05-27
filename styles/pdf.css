@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ocmtqn');
+  src:  url('fonts/icomoon.eot?ocmtqn#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ocmtqn') format('truetype'),
+    url('fonts/icomoon.woff?ocmtqn') format('woff'),
+    url('fonts/icomoon.svg?ocmtqn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gitbook-link {
+    display: none !important
+}
+
+.page-footer {
+  display: none !important
+}
+.page-comment {
+  display: none !important
+}
+
+.book-logo {
+    text-align: left !important
+}
+
+#book-search-input {
+    text-align: right !important
+}
+
+.custom-link {
+    text-decoration: underline !important;
+    color: blue !important;
+}
+
+.panel {
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+  }
+  
+  .panel-content {
+    background: white;
+    padding: 1em 1em 0;
+  }
+  
+  .panel-heading {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0.5em 1em;
+  }
+  
+  .panel-icon {
+    display: none !important
+  }
+
+  .panel-heading .panel-icon {
+    position: absolute;
+  }
+  
+  .panel-heading .panel-icon i {
+    font-size: 1.5em;
+  }
+  
+  .panel-heading .panel-title {
+    padding-left: 0px;
+  }
+  
+  .panel-danger .panel-heading {
+    background: #fdf7f7;
+  }
+  
+  .panel-danger i {
+    color: #d9534f;
+  }
+  
+  .panel-info .panel-heading {
+    background: #eff5ff;
+  }
+  
+  .panel-info i {
+    color: #42acf3;
+  }
+  
+  .panel-success .panel-heading {
+    background: #f3f8f3;
+  }
+  
+  .panel-success i {
+    color: #50af51;
+  }
+  
+  .panel-warning .panel-heading {
+    background: #fcf8f2;
+  }
+  
+  .panel-warning i {
+    color: #f0ad4e;
+  }
+
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-danger:before {
+    content: "\e901";
+  }
+  .icon-info:before {
+    content: "\e903";
+  }
+  .icon-success:before {
+    content: "\e902";
+  }
+  .icon-warning:before {
+    content: "\e900";
+  }

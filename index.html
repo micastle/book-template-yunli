@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>应用中台-开发者门户</title>
+
+    <style>
+.book {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.menu {
+    color: #364149;
+    background: #bebbbb;
+    vertical-align: middle;
+}
+.content {
+    width: 100%;
+    height: 100%;
+}
+    </style>
+</head>
+
+<body>
+    <div class="book">
+        <div class="menu book" style="height: 30px; top: 0px; width: 100%; position: absolute;">
+            &nbsp;&nbsp;<a href="http://localhost:4000/" target="content">用户中心</a>
+            &nbsp;&nbsp;<a href="http://localhost:4000/0-产品立项评审规范/" target="content">用户中心</a>
+            &nbsp;&nbsp;<a href="http://localhost:4000/0-产品立项评审规范/" target="content">用户中心</a>
+            &nbsp;&nbsp;<a href="http://localhost:4000/0-产品立项评审规范/" target="content">用户中心</a>
+            
+        </div>
+
+        <div class="book" style="top: 30px; height: calc(100% - 30px); position: absolute;">
+            <iframe name="content" class="content" frameborder="0" scrolling="auto" marginheight="" marginwidth=""></iframe>
+        </div>
+
+    </div>
+
+    <script>
+setupSelectHandler(document, onSelectionEvent);
+
+function onSelectionEvent(selectedText, target){
+	alert("文字属于"+target.tagName+"元素，选中内容为："+selectedText);
+
+	onComment(selectedText);
+}
+
+function onComment(selectedText) {
+	alert("评论引用的内容为："+selectedText);
+}
+
+/*
+*
+* 跨浏览器选中文字事件
+* @param
+* object o 响应选中事件的DOM对象，required
+* function fn(sText,target,mouseP)选中文字非空时的回调函数，required
+* |-@param
+* |-sText 选中的文字内容
+* |-target 触发mouseup事件的元素
+* |-mouseP 触发mouseup事件时鼠标坐标
+*/
+function setupSelectHandler(o, fn){
+	o.onmouseup = function(e){
+		var event = window.event || e;
+		var target = event.srcElement ? event.srcElement : event.target;
+		if (/input|textarea/i.test(target.tagName) && /firefox/i.test(navigator.userAgent)) {
+			//Firefox在文本框内选择文字
+			var staIndex=target.selectionStart;
+			var endIndex=target.selectionEnd;
+			if(staIndex!=endIndex){
+				var sText=target.value.substring(staIndex,endIndex);
+				fn(sText,target);
+			}
+		}
+		else{
+			//获取选中文字
+			var sText = getSelectedText();
+			if (sText != "") {
+				//将参数传入回调函数fn
+				fn(sText, target);
+			}
+		}
+	}
+}
+
+function getSelectedText() {
+	return document.selection == undefined ? document.getSelection().toString():document.selection.createRange().text;
+}
+
+    </script>
+</body>
+
+</html>

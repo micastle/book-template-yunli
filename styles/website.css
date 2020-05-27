@@ -1,0 +1,78 @@
+.book-top {
+    height: 80px; 
+    top: 0px; 
+    position: absolute;
+}
+
+.book-logo {
+    text-align: left !important;
+    vertical-align:middle;
+    padding: 0px 10px 0px 10px !important;
+}
+.title-label {
+    text-align: left !important;
+    font-size: 2em !important;
+    color: #008cff !important;
+    font-weight: bold !important;
+    font-family: Georgia, serif !important;
+    /*font-family: Microsoft YaHei;*/
+    padding: 0px 0px 0px 0px !important;
+}
+
+#book-search-input {
+    text-align: right !important;
+    background-color: aliceblue;
+    color: black !important;
+}
+
+.custom-link {
+    text-decoration: underline !important;
+    color: blue !important;
+}
+
+.gitbook-link {
+    display: none !important
+}
+
+.summary-footer {
+    vertical-align:middle;
+    padding:10px 10px 10px 10px;
+    height: 40px
+}
+.summary-footer-label {
+    float:left;
+    text-align: left;
+    display:block;
+    font-size: 12px;
+    color: #808080;
+    padding:0px 0px 0px 10px;
+}
+
+.book-header {
+    background-color: black !important;
+}
+
+.page-inner {
+    max-width: calc(100% - 200px) !important;
+}
+
+.page-comment-icon {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 35px;
+    display: block;
+    position: fixed;
+    bottom: 168px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+
+.page-comment-icon i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 15px;
+    top: 7px;
+    font-size: 22px;
+}
