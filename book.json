@@ -144,6 +144,14 @@
                     "position":"right",
                     "url": "http://www.yunlizhihui.com/",
                     "target": "_blank"
+                },
+                {
+                    "label": " ",
+                    "text": " ",
+                    "icon": "fa fa-list",
+                    "position":"right",
+                    "url": "#",
+                    "target": "_self"
                 }
             ]
         },
