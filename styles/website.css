@@ -36,6 +36,7 @@
 .custom-link {
     text-decoration: underline !important;
     color: blue !important;
+    display: none !important;
 }
 
 .gitbook-link {

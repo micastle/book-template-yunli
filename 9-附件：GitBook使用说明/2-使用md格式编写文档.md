@@ -52,7 +52,7 @@ md help
 
 ## PDF
 
-{% pdf src="/assets/文档样例.pdf", width="100%", height="550", title="文档样例", link=true %}
+{% pdf src="/assets/book-template-yunli.pdf", width="100%", height="550", title="文档模板", link=true %}
 {% endpdf %}
 
 ## 视频

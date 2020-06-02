@@ -6,6 +6,7 @@
     "gitbook": "3.2.3",
     "links" : {
       "sidebar": {
+          "云粒官网": "http://www.yunlizhihui.com/"
       }
     },
     "styles": {
@@ -47,7 +48,7 @@
         "my-toolbar",
         "theme-darkblue",
         "extra-html",
-        "book-tool",
+        "-book-tool",
 
         "-autotheme",
         "-customtheme",
@@ -151,7 +152,14 @@
                     "icon": "fa fa-list",
                     "position":"right",
                     "url": "#",
-                    "target": "_self"
+                    "target": "_self",
+                    "menu": [
+                        {
+                            "icon": "fa fa-th",
+                            "text": "",
+                            "action": ""
+                        }
+                    ]
                 }
             ]
         },
